@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🦛 FREQ Follow-Ups for CAR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+            h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}body {font-family: "Open Sans"}
+        </style>
+    </head>
+
+    <body class="w3-content w3-padding" style="max-width:none">
+        
+        <h1 class="w3-center">🦛 FREQ Follow-Ups for CAR</h1>
+
+        <h2>General Procedure</h2>
+
+        <div class="w3-row-padding">
+            <div class="w3-col s12 m6 l6">
+                <div class="w3-panel w3-card w3-blue">
+                    <h3>Kate's 'Synthesis-Directed Elaborations'
+                    </h3>
+
+                    <ol>
+                        <li>Two fragment screen hits are merged with Fragmenstein</li>
+                        <li>The closest catalog compound is used as a base for enumeration</li>
+                        <li>The base compound is split into two building blocks</li>
+                        <li>The building blocks are elaborated to create many different reaction products</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="w3-col s12 m6 l6">
+                <div class="w3-panel w3-card w3-blue">
+                    <h3>Max's 'Hit Interaction Profiling for Procurement Optimisation'</h3>
+                    <ol>
+                        <li>A 'HIPPO' object is prepared with the fragment screen hits, follow-up compounds with their reaction paths and purchasing metadata</li>
+                        <li>The protein-ligand interactions are fingerprinted</li>
+                        <li>Many random collections of products and their associated building blocks are generated</li>
+                        <li>These building block sets are scored and ranked</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="w3-col s12 m6 l6">
+                <div class="w3-panel w3-card w3-blue">
+                    <h3> Random BBS Constraints </h3>
+
+                    <ul>
+                        <li>$8000 total budget</li>
+                        <li>Lead time at most 35 working days</li>
+                        <li>Building blocks at most $100/mg</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w3-col s12 m6 l6">
+                <div class="w3-panel w3-card w3-blue">
+                    <h3> Scoring Metrics </h3>
+
+                    <ul>
+                        <li>The total number of products</li>
+                        <li>Hit features coverage</li>
+                        <li>New protein features (half weight)</li>
+                        <li>Average Fragmenstein ddG (quarter weight)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Comparing all Building Block Sets</h2>
+
+        All random BBSs generated are compared below:
+
+        <div> 
+            <!-- <iframe src="iter1b_go/scoring_products_coverage.html" width="100%" height="500" style="border:none;"></iframe> -->
+            <iframe src="iter1b_go/scoring_newfeat_coverage.html" width="100%" height="500" style="border:none;"></iframe>
+        </div>
+        
+        <h2>Proposals</h2>
+        
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-blue" onclick="openTab(event,'BBS_002057')">BBS_002057</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'BBS_002058')">BBS_002058</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'BBS_001515')">BBS_001515</button>
+        </div>
+
+        <div id="BBS_002057" class="w3-container w3-border tab">
+            
+            <h2>BBS_002057: Top Score <$8000</h2>
+
+            <div class="w3-panel w3-card w3-blue">
+                <h3> Random BBS Constraints </h3>
+
+                <ul>
+                    <li><b>name:</b> "BBS_002057"</li>
+                    <li><b>num_bbs:</b> 280,</li>
+                    <li><b>total_bb_amount:</b> 1180 mg,</li>
+                    <li><b>num_products:</b> 590,</li>
+                    <li><b>price:</b> $7999.92,</li>
+                    <li><b>max_lead_time:</b> 34.0 working days,</li>
+                    <li><b>avg_lead_time:</b> 23.7 working days,</li>
+                    <li><b>hit_feature_coverage:</b> 38.5%,</li>
+                    <li><b>num_new_features:</b> 241,</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="BBS_002058" class="w3-container w3-border tab" style="display:none">
+            
+            <h2>BBS_002058: Most Products <$8000</h2>
+
+            <div class="w3-panel w3-card w3-blue">
+                <h3> Random BBS Constraints </h3>
+
+                <ul>
+                    <li><b>name:</b> BBS_002058</li>
+                    <li><b>num_bbs:</b> 286</li>
+                    <li><b>total_bb_amount:</b> 1196 mg</li>
+                    <li><b>num_products:</b> 598</li>
+                    <li><b>price:</b> $7996.72</li>
+                    <li><b>max_lead_time:</b> 34.0 working days</li>
+                    <li><b>avg_lead_time:</b> 23.1 working days</li>
+                    <li><b>hit_feature_coverage:</b> 38.7%</li>
+                    <li><b>num_new_features:</b> 184</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="BBS_001515" class="w3-container w3-border tab" style="display:none">
+            
+            <h2>BBS_002058: Most Products <$8000</h2>
+
+            <div class="w3-panel w3-card w3-blue">
+                <h3> Random BBS Constraints </h3>
+
+                <ul>
+                    <li><b>name:</b> BBS_001515</li>
+                    <li><b>num_bbs:</b> 171</li>
+                    <li><b>total_bb_amount:</b> 406 mg</li>
+                    <li><b>num_products:</b> 203</li>
+                    <li><b>price:</b> $4694.83</li>
+                    <li><b>max_lead_time:</b> 34.0 working days</li>
+                    <li><b>avg_lead_time:</b> 22.9 working days</li>
+                    <li><b>hit_feature_coverage:</b> 36.7%</li>
+                    <li><b>num_new_features:</b> 160</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("tab");
+                
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+                }
+
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " w3-blue";
+            }
+        </script>
+
+    </body>
+</html>
